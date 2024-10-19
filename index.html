@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div style="background-color: black; color:white; text-align:center; padding:2px">
+        <h1>Stock Tracker Dashboard</h1>
+
+    </div>
+    <div style="text-align:center; padding:2px">
+    <h2>Select Trending Stock</h2>
+    <select style="padding: 12px; width:220px"  type="text" id="select" placeholder="Enter Your Stock Name">
+        <option  value="" ></option>
+    </select>
+    <button style="padding: 14px; width:120px; background-color:greenyellow; border:none; font-size :15px;"  id="option">Load Stock</button><br/><br/>
+    <input type="text" id="input" style="padding: 12px; width:120px" placeholder="Enter Your Stock"/>
+    <button id="option2" style="padding: 14px; width:80px; background-color:greenyellow; border:none; font-size :15px;">Search</button>
+</div>
+    <div id="divData">
+        <p id="para"></p>
+    </div>
+    <canvas id="myChart" width="400" height="200"></canvas>
+   <table border="1" style="width: 90%; border-collapse: collapse; margin:auto">
+    <thead >
+        <tr>
+        <th>Stock</th>
+        <th>Price</th>
+        <th>Change</th>
+        <th>Volume</th>
+    </tr>
+    </thead>
+    <tbody id="TableRow">
+
+    </tbody>
+
+   
+   </table>
+    <script src="./index.js"></script>
+</body>
+</html>
